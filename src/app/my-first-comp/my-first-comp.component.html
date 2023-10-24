@@ -1,0 +1,47 @@
+<div class="form-container">
+  <h2>Register Form</h2>
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" [(ngModel)]="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="alamat">Adrress:</label>
+      <input type="text" id="alamat" [(ngModel)]="alamat" name="alamat" required>
+    </div>
+    <div class="form-group">
+      <label for="company">Company:</label>
+      <input type="text" id="company" [(ngModel)]="company" name="company" required>
+    </div>
+    <div class="form-group">
+      <label for="Telepon">Telepon:</label>
+      <input type="text" id="Telepon" [(ngModel)]="Telepon" name="Telepon" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" [(ngModel)]="email" name="email" required>
+    </div>
+   <button type="submit">Submit</button>
+
+
+<table *ngIf="isSubmitted">
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Telepon</th>
+    <th>Alamat</th>
+    <th>Company</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let msg of messages">
+    <td>{{ msg.name }}</td>
+    <td>{{ msg.email }}</td>
+    <td>{{ msg.Telepon}}</td>
+    <td>{{ msg.alamat}}</td>
+    <td>{{ msg.company}}</td>
+    
+  </tr>
+  </tbody>
+</table>

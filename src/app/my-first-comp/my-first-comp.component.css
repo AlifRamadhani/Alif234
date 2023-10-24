@@ -1,0 +1,41 @@
+.container{
+  height: 100vm;
+  width: 100vm;
+  background-image: url();
+}
+
+.form-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 50px;
+  border: 10px solid #ccc;
+  border-radius: 10px; 
+  background-color: orange;   
+}
+
+h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  
+  
+}
+
+input[type="text"],
+input[type="email"],
+input[type="Telepon"]
+input[type="alamat"]
+input[type="company"]
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
